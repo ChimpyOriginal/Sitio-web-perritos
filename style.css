@@ -1,0 +1,558 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", serif;
+}
+
+body {
+  background-color: #f0fcff;
+  text-align: center;
+}
+
+/* ---------------------------------- */
+
+/*INICIA BARRA DE NAVEGACIÓN*/
+.navbar-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.navbar-tablet {
+  display: none;
+}
+nav ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background: #05ced9;
+}
+
+nav ul li {
+  margin: 0 15px; /* Centrar el texto en la navbar */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Para tablets y celulares*/
+@media (max-width: 768px) {
+  header {
+    background-color: #05ced9;
+    color: white;
+  }
+  .navbar-desktop {
+    display: none;
+  }
+  .navbar-tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #05ced9;
+    color: white;
+  }
+
+  .navbar button {
+    background-color: white;
+    color: white;
+  }
+}
+
+.nav-link {
+  /*CAMBIAR EL ESTILO DE LOS ENLACES COLOR DE LETRA Y POSICIÓN*/
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.offcanvas {
+  background-color: transparent;
+  padding-top: 0;
+  max-width: 0%;
+}
+/*TERMINA BARRA DE NAVEGACIÓN*/
+
+
+/* ---------------------------------- */
+/*INICIA CARRUSEL*/
+
+.carousel-caption {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.carousel-caption h5 {
+  font-size: 4vw;
+  font-weight: bolder;
+}
+
+.carousel-caption h3 {
+  font-size: 2.5vw;
+}
+
+.carousel-caption p {
+  font-size: 1.2vw;
+  margin-bottom: 0;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.margin-top-btn {
+  margin-top: 7%;
+}
+/* Para tablets y celulares*/
+@media (max-width: 768px) {
+  .carousel-caption h5 {
+    font-size: 6vw;
+  }
+
+  .carousel-caption h3 {
+    font-size: 4vw;
+  }
+
+  .carousel-caption p {
+    font-size: 2vw;
+  }
+
+  .c-item {
+    height: 350px;
+  }
+
+  .carousel-caption {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .carousel-caption * {
+    /* Estilos para elementos dentro de .carousel-caption */
+    margin: 5px auto; /* Márgenes automáticos para centrar horizontalmente */
+  }
+
+  .btn-conocer-mas {
+    display: block; /* Convertir el botón en bloque para que ocupe todo el ancho */
+    margin: 10px auto; /* Centrar el botón horizontalmente */
+  }
+  .c-img {
+    width: 100%;
+    object-fit: cover;
+    margin-top: 3%;
+  }
+}
+
+/*TERMINA CARRUSEL*/
+
+
+/*-----------------------------------*/
+/*INICIA SECCIÓN CONOCENOS*/
+#conocenos {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.tarjeta-conocenos {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 95vw;
+  height: 60vh; /* Más alta para acomodar el contenido */
+  background-color: #80c53f;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo del texto */
+.texto-conocenos {
+  flex: 1;
+  padding: 15px;
+  max-width: 55vw;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 5vh;
+}
+
+.titulo-conocenos {
+  color: white;
+  font-size: 8vh;
+  font-weight: bold;
+}
+
+.descripcion-conocenos {
+  color: white;
+  font-size: 20%;
+  line-height: 1.5;
+  font-size: 0.5em;
+  text-align: justify;
+}
+
+.imagen-conocenos {
+  max-width: 40%;
+  height: 100%;
+  /*object-fit: cover;*/
+  padding: 40px;
+  border-radius: 50%;
+}
+
+.imagen-conocenos:hover {
+  transform: scale(1.05);
+  border-radius: 10;
+}
+
+@media (max-width: 768px) {
+  .titulo-conocenos {
+    color: white;
+    font-size: 5vh;
+    font-weight: bold;
+  }
+  .tarjeta-conocenos {
+    display: flex;
+    flex-direction: column;
+    max-width: 90vw;
+    height: auto;
+  }
+  .imagen-conocenos {
+    max-width: 90%;
+    max-height: 45%;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  .texto-conocenos {
+    text-align: center;
+    max-width: 90%;
+    font-size: 4vh;
+  }
+}
+/*TERMINA SECCIÓN CONOCENOS*/
+
+/*-----------------------------------*/ 
+
+/*INICIA REQUISITOS*/
+#requisitos {
+  max-width: 90%; 
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 20px; 
+  font-size: 110%;
+}
+
+.titulo-requisitos {
+  color: rgb(255, 113, 191);
+  font-size: 8vh;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+.subtitulo-requisitos {
+  font-size: 3vh;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #requisitos {
+    max-width: 90%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    font-size: 95%;
+    text-align: justify;
+  }
+  .titulo-requisitos {
+    color: rgb(255, 113, 191);
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3%;
+  }
+  .subtitulo-requisitos {
+    font-size: 2.5vh;
+    margin-bottom: 5%;
+  }
+  
+}
+/*TERMINA REQUISITOS*/
+
+/*-----------------------------------*/ 
+
+/*INICIA TARJETAS DE PERRITOS*/
+.titulo-adoptables {
+  color: rgb(62, 46, 143);
+  font-size: 8vh;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#adoptables {
+  padding: 20px;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tarjeta-perrito {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 650px;
+  height: 300px;
+  transition: transform 0.3s ease-in-out;
+}
+.tarjeta-color-1 {
+  background-color: #12b8cb;
+}
+
+.tarjeta-color-2 {
+  background-color: #dcb712;
+}
+
+.tarjeta-color-3 {
+  background-color: #79b62d;
+}
+
+.tarjeta-color-4 {
+  background-color: #dd56b7;
+}
+
+.tarjeta-color-5 {
+  background-color: #d15812;
+}
+
+.tarjeta-color-6 {
+  background-color: #68b5e1;
+}
+
+.imagen-perrito {
+  max-width: 40%;
+  object-fit: cover;
+}
+
+
+.imagen-perrito:hover {
+  transform: scale(1.05);
+}
+
+.info-perrito {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.nombre-perrito {
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.descripcion-perrito {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.btn-conocer-mas {
+  background-color: #ffffff;
+  color: #6030a8;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  text-align: center;
+  width: 150px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-conocer-mas:hover {
+  background-color: #6030a8;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .titulo-adoptables {
+    color: rgb(62, 46, 143);
+    font-size: 5vh;
+    font-weight: bold;
+    margin-bottom: 5%;
+  }
+  .imagen-perrito {
+    object-fit: cover;
+    max-width: 50%;
+  }
+}
+/*TERMINA TARJETAS DE PERRITOS*/
+
+/*-----------------------------------*/
+
+/*INICIA CONTACTO*/
+#contactanos {
+  max-width: 90%; 
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 20px; 
+  font-size: 110%;
+}
+
+.titulo-contactanos {
+  color: rgb(246, 57, 111);
+  font-size: 8vh;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+#contactanos ul {
+  text-align: center; /* Centra el texto dentro de la lista */
+  list-style: none; /* Quita los puntos de la lista */
+}
+
+@media (max-width: 768px) {
+  #contactanos {
+    max-width: 90%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    font-size: 95%;
+    text-align: justify;
+  }
+  .titulo-contactanos {
+    color: rgb(246, 57, 111);
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3%;
+  }
+
+}
+/*TERMINA REQUISITOS*/
+/*-----------------------------------*/ 
+
+/*INICIA PAGINAS PERRITOS*/
+.paginas-perritos {
+  max-width: 90%; 
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 20px; 
+  font-size: 110%;
+}
+.paginas-perritos ul {
+  text-align: center; /* Centra el texto dentro de la lista */
+  list-style: none; /* Quita los puntos de la lista */
+}
+.titulo-perritos {
+  font-size: 8vh;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+.subtitulo-perritos {
+  font-size: 3vh;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+.paginas-perritos img {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  height: 250px;
+}
+.nombre-perritos {
+  font-size: 6vh;
+  margin-bottom: 2%;
+  font-weight: bold;
+  color: #696969;
+}
+.color-bigotes {
+  color: #f27006;
+}
+.color-jackson {
+  color: #05abd5;
+}
+.color-kira {
+  color: #e94bcf;
+}
+.color-toby {
+  color: #569eeb;
+}
+.color-rocky {
+  color: #77ce14;
+}
+.color-luna {
+  color: #dcbb11;
+}
+@media (max-width: 768px) {
+  .paginas-perritos {
+    max-width: 90%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    font-size: 95%;
+    text-align: justify;
+    margin-top: 5%;
+  }
+  
+  .titulo-perritos {
+    font-size: 8vh;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3%;
+  }
+  .subtitulo-perritos{
+    font-size: 2.5vh;
+    margin-bottom: 5%;
+  }
+  .nombre-perritos {
+    font-size: 6vh;
+    margin-bottom: 2%;
+    font-weight: bold;
+    color: #525252;
+    text-align: center;
+  }
+}
+/*TERMINA REQUISITOS*/
+
+/* ---------------------------------- */
+
+/*INICIA PIE DE PAGINA*/
+.pie-de-pagina {
+  background-color: #05ced9;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  height: auto;
+}
+
+.iconos-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 30px;
+}
+/* TERMINA PIE DE PAGINA */

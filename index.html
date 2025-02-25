@@ -1,0 +1,253 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Adoptar Perritos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5e72f2f240.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!--BARRA DE NAVEGACIÓN PARA DESKTOP-->
+  <header>
+    <nav class="navbar-desktop">
+      <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#conocenos">Conócenos</a></li>
+          <li><a href="#requisitos">Requisitos</a></li>
+          <li><a href="#adoptables">Adoptables</a></li>
+          <li><a href="#contactanos">Contáctanos</a></li>
+      </ul>
+  </nav>
+  
+
+ <!-- BARRA DE NAVEGACIÓN DE TABLET Y MOVILES -->
+ <section class="navbar-tablet">
+  <nav class="navbar  fixed-top navbar-tablet">
+      <div class="container-fluid">
+          <div >
+              <a  href="./index.html"></a>                    </div> <!-- Menu a la izq -->
+      <!-- MENU -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      <!-- DESPLIEGUE DE MENÚ -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <!-- TITULO DE MENÚ -->
+              <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENÚ</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+          <!-- SECCIONES DEL MENÚ -->
+              <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                          <a class="nav-link"  href="#inicio">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#conocenos">Conócenos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#requisitos">Requisitos</a>
+                      </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#adoptables">Adoptables</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contactanos">Contáctanos</a>
+                  </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </nav>
+</section>
+
+  </header>
+   
+   
+   <section id="inicio"> 
+    <div id="hero-carrusel" class="carousel slide"> 
+    <div class="carousel-indicators"> 
+      <button type="button" data-bs-target="#hero-carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> 
+      <button type="button" data-bs-target="#hero-carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button> 
+      <button type="button" data-bs-target="#hero-carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button> 
+    </div> 
+    <div class="carousel-inner"> 
+      <div class="carousel-item active c-item"> 
+        <img src="/assets/Banner Kira.png" class="d-block w-100 c-img" alt="1"> 
+        <div class="carousel-caption" style="position: absolute; top: 10%; right: 55%;"> 
+          <h5>¡Adóptame!</h5> 
+          <h3>Hola, soy Kira,</h3> 
+          <p>y me encantaría encontrar.</p> 
+          <p>una nueva familia.</p> 
+          <a href="./html/kira.html" class="btn-conocer-mas margin-top-btn">Conocer más</a> 
+      </div> 
+      </div> 
+      <div class="carousel-item c-item"> 
+        <img src="/assets/Banner bigotes.png" class="d-block w-100 c-img" alt="2"> 
+        <div class="carousel-caption" style="position: absolute; top: 10%; right: 55%;"> 
+          <h5>Conoce a Bigotes</h5> 
+          <p>¡Este lindo está muy ansioso por</p> 
+          <p>encontrar un nuevo y amoroso hogar!</p> 
+          <a href="./html/bigotes.html" class="btn-conocer-mas margin-top-btn">Conocer más</a> 
+      </div>  
+      </div> 
+      <div class="carousel-item c-item"> 
+        <img src="/assets/Banner Rocky.png" class="d-block w-100 c-img" alt="3"> 
+        <div class="carousel-caption" style="position: absolute; top: 10%; right: 55%;"> 
+          <h5>¡Llévame contigo!</h5> 
+          <h3>Hola, soy Rocky.</h3> 
+          <p>¡Dame la oportunidad de conocerte y</p> 
+          <p>que nos volvamos mejores amigos!</p> 
+          <a href="./html/rocky.html" class="btn-conocer-mas margin-top-btn">Conocer más</a> 
+      </div> 
+      </div> 
+    </div> 
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carrusel" data-bs-slide="prev"> 
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+      <span class="visually-hidden">Previous</span> 
+    </button> 
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carrusel" data-bs-slide="next"> 
+      <span class="carousel-control-next-icon" aria-hidden="true"></span> 
+      <span class="visually-hidden">Next</span> 
+    </button> 
+  </div> 
+</section>
+
+
+
+<section id="conocenos">
+  <div class="tarjeta-conocenos">
+    <img src="https://fundacionrescatame.org/wp-content/uploads/2019/09/69662898_502467070501374_5790239157712322560_n-e1567978614139.jpg" alt="Imagen de los voluntarios" class="imagen-conocenos">
+    <div class="texto-conocenos">
+      <h2 class="titulo-conocenos">¿Quiénes somos?</h2>
+    <p class="descripcion-conocenos">En Villahermosa, Tabasco, late un refugio donde el amor incondicional por los perritos es el motor que impulsa cada acción. Somos una organización sin fines de lucro, un grupo de personas unidas por la pasión de rescatar a aquellos peludos que viven en las calles, desamparados y vulnerables. </p>
+    <p class="descripcion-conocenos">Nuestra misión va más allá de ofrecer un simple techo y alimento. Buscamos brindarles una segunda oportunidad, un hogar lleno de cariño y seguridad, donde puedan olvidar el abandono y encontrar la felicidad que merecen. Trabajamos incansablemente para rehabilitarlos, curar sus heridas y encontrarles la familia perfecta, esa que los amará para siempre.</p>
+</div>
+  </section>
+
+<section id="requisitos">
+      <h2 class="titulo-requisitos">Requisitos para adoptar</h2>
+        <h4 class="subtitulo-requisitos">Adoptar a un perrito es una gran responsabilidad, y queremos asegurarnos de que todos los perritos tengan la bonita familia que se merecen, por lo que es importante que tomes en cuenta cumplir con los siguientes requisitos antes de adoptar:</h3>
+    <ul>
+      <li><b>Compromiso de por vida:</b> Estar dispuesto a cuidar y proteger al perrito durante toda su vida, brindándole amor, atención y cuidados necesarios.</li>
+      <li><b>Mayoría de edad:</b> Ser mayor de 18 años y contar con identificación oficial vigente (INE, licencia de conducir, etc.).</li>  
+      <li><b>Compromiso familiar:</b> Si vives con otras personas, todos deben estar de acuerdo con la adopción y dispuestos a participar en el cuidado del perrito.</li>
+      <li><b>Espacio:</b> Contar con un espacio en tu hogar que se adapte a las necesidades del perrito que deseas adoptar. Considera su tamaño, nivel de energía y raza.</li>
+      <li><b>Recursos económicos: </b> Tener la capacidad económica para cubrir los gastos asociados al cuidado del perrito, incluyendo: alimento, atención veterinaria, artículos para mascotas, y otros gastos.</li>
+      <li><b>Visita al refugio:</b>Es importante que conozcas a los perritos en persona y elijas al que más se adapte a tu estilo de vida y necesidades.</li>
+      <li><b>Entrevista personal:</b> Participar en una entrevista con nuestro equipo para conocernos mejor y resolver cualquier duda que tengas.</li>
+      <li><b>Carta compromiso</b> Redactar una carta con tus propias palabras donde expreses tu compromiso de cumplir con todos los requisitos y brindar al perrito el amor, cuidado y atención que necesita. En esta carta, puedes compartir tu experiencia con mascotas, tu estilo de vida y por qué deseas adoptar.</li>
+    </ul>
+</section>
+
+<section id="adoptables">
+    <h2 class="titulo-adoptables">¡Conoce a nuestros peluditos!</h2>
+    
+    <div class="contenedor-tarjetas">
+
+      <div class="tarjeta-perrito tarjeta-color-1">
+        <img src="./assets/pngegg.png" alt="Jackson" class="imagen-perrito">
+        <div class="info-perrito">
+          <h3 class="nombre-perrito">Jackson</h3>
+          <p class="descripcion-perrito">¡Soy muy alegre y amo los juguetes! Aunque también algo flojo.</p>
+          <a href="./html/jackson.html" class="btn-conocer-mas">Conocer más</a>
+        </div>
+      </div>
+  
+      <div class="tarjeta-perrito tarjeta-color-2">
+        <img src="./assets/p3.png" alt="Luna" class="imagen-perrito">
+        <div class="info-perrito">
+          <h3 class="nombre-perrito">Luna</h3>
+          <p class="descripcion-perrito">Soy juguetona y cariñosa. ¡Me encanta correr y dar largos paseos!</p>
+          <a href="./html/luna.html" class="btn-conocer-mas">Conocer más</a>
+        </div>
+      </div>
+  
+      <div class="tarjeta-perrito tarjeta-color-3">
+        <img src="./assets/Rocky.png"alt="Rocky" class="imagen-perrito">
+        <div class="info-perrito">
+          <h3 class="nombre-perrito">Rocky</h3>
+          <p class="descripcion-perrito">Soy un poco miedoso pero muy fiel. Con el tiempo seré tu mejor amigo.</p>
+          <a href="./html/rocky.html" class="btn-conocer-mas">Conocer más</a>
+        </div>
+      </div>
+  
+      <div class="tarjeta-perrito tarjeta-color-4">
+        <img src="/assets/Kira.png" alt="Kira" class="imagen-perrito">
+        <div class="info-perrito">
+          <h3 class="nombre-perrito">Kira</h3>
+          <p class="descripcion-perrito">Soy muy amorosa, ideal para una familia que busque una perrita calmada.</p>
+          <a href="./html/kira.html" class="btn-conocer-mas">Conocer más</a>
+        </div>
+      </div>
+  
+      <div class="tarjeta-perrito tarjeta-color-5">
+        <img src="/assets/Bigotess.png" alt="Bigotes" class="imagen-perrito imagen-bigotes">
+        <div class="info-perrito">
+          <h3 class="nombre-perrito">Bigotes</h3>
+          <p class="descripcion-perrito">¡Me encantan los abrazos y quedarnos en casa!</p>
+          <a href="./html/bigotes.html" class="btn-conocer-mas">Conocer más</a>
+        </div>
+      </div>
+  
+      <div class="tarjeta-perrito tarjeta-color-6">
+        <img src="/assets/Toby.png" alt="Toby" class="imagen-perrito">
+        <div class="info-perrito">
+          <h3 class="nombre-perrito">Toby</h3>
+          <p class="descripcion-perrito">Soy fuerte y cariñoso, ideal para una vida activa. </p>
+          <a href="./html/toby.html" class="btn-conocer-mas">Conocer más</a>
+        </div>
+      </div>
+    </div>
+
+</section>
+<section>
+  <section id="contactanos">
+    <h2 class="titulo-contactanos">¡Contáctanos!</h2>
+    <p class="texto-contactanos">Si estás interesado en adoptar a alguno de nuestros perritos, colaborar como voluntario o con suministros para los peluditos, ¡no dudes en contactarnos! Estamos a tu disposición para ayudarte y responder tus preguntas. Puedes comunicarte con nosotros a través de:</p>
+    <ul>
+      <li><b>Teléfono:</b> 9931279119</li>
+      <li><b>Correo electrónico:</b> refugio_moonie@gmail.com</li>
+    </ul>
+    <p>O búscanos en nuestras redes sociales como:</p>
+    <ul>
+      <li><b>Facebook:</b> @RefugioMoonie</li>
+      <li><b>Instagram:</b> @refugio_moonie</li>
+      <li><b>Twitter:</b> @Refugio_m0onie</li>
+    </ul>
+</section>
+
+</body>
+
+<footer class="pie-de-pagina">
+  
+  <p>Síguenos en:
+    <div class="iconos-footer">
+    <a href="https://www.facebook.com/">
+      <span style="font-size: 30px; color: rgb(20, 92, 216);">
+        <i class="fa-brands fa-facebook"></i>
+      </span>
+    </a>
+    <a href="https://www.instagram.com/">
+      <span style="font-size: 30px; color: rgb(240, 46, 172);">
+      <i class="fa-brands fa-instagram"></i>
+      </span>
+    </a>
+    <a href="https://x.com/?mx=2">
+      <span style="font-size: 30px; color: rgb(23, 24, 24);">
+      <i class="fa-brands fa-x-twitter"></i>
+      </span>
+    </a>
+  </div>
+  </p>
+</footer>
+
+</html>
